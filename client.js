@@ -12,7 +12,9 @@ const connect = function () {
 
     // event handler:  what to do when first connected
     conn.on('connect', () => {
-      console.log('I am now connected!');
+      console.log('Successfully connected to game server');
+      conn.write('Name: HCB');
+      //conn.write('Move: up');
     });
 
     // event handler:  what to do when receiving data from the server

@@ -31,7 +31,19 @@ const handleUserInput = function (key) {
   if (key === 'd') {
     connection.write('Move: right');
   }
-}
+  if (key === 'j') {
+    connection.write("Say: I'm hungry!");
+  }
+  if (key === 'k') {
+    connection.write('Say: I need food!');
+  }
+  if (key === 'l') {
+    connection.write('Say: I have the power!');
+  }
+  if (key === 'u') {
+    connection.write('Say: Hi Simsim!');
+  }
+};
 
 // This sets up stdin and the UI to accept user input
 const setupInput = function (conn) {
